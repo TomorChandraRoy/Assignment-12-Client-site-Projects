@@ -12,7 +12,7 @@ const CheckOutForm = () => {
     const elements = useElements();
     // const axiosSecure = useAxiosSecure();
     useEffect(()=>{
-        fetch('http://localhost:5000/payment')
+        fetch('https://server-site-project.vercel.app/payment')
         .then(res=> res.json())
         .then(data=>setData(data))
 

@@ -20,7 +20,7 @@ const SurveyCreation = () => {
         const addSurvey = { email, title, Deadtime, description, category, option, DisLike, like,image  }
         console.log(addSurvey);
         //{??--DataBase Data Load--??}
-        fetch("http://localhost:5000/surveyData", {
+        fetch("https://server-site-project.vercel.app/surveyData", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

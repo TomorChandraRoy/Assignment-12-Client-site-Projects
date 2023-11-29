@@ -4,7 +4,7 @@ const FeaturedSurvey = () => {
     const [allData, setAllData] = useState();
 
     useEffect(() => {
-        fetch('http://localhost:5000/surveyData')
+        fetch('https://server-site-project.vercel.app/surveyData')
             .then(res => res.json())
             .then(data => {
                 setAllData(data);

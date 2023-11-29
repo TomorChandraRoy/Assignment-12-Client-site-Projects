@@ -4,7 +4,7 @@ const usePayment = () => {
     const [error, setError] = useState();
     return (
        useEffect(()=>{
-        fetch('http://localhost:5000/payment')
+        fetch('https://server-site-project.vercel.app/payment')
         .then(res=> res.json())
         .then(data=>setError(data))
        },[])

@@ -39,13 +39,13 @@ export const router = createBrowserRouter([
         {
           path: '/surveysDetails',
           element: <SurveysDetails></SurveysDetails>,
-          loader: () => fetch('http://localhost:5000/surveyData')
+          loader: () => fetch('https://server-site-project.vercel.app/surveyData')
          
         },
         // {
         //   path: '/surveysDetails/:id',
         //   element: <SurveysDetails></SurveysDetails>,
-        //   loader:({params}) => fetch(`http://localhost:5000/surveyData/${params.id}`)
+        //   loader:({params}) => fetch(`https://server-site-project.vercel.app/surveyData/${params.id}`)
          
         // },
         {
@@ -92,7 +92,7 @@ export const router = createBrowserRouter([
         {
           path: 'usersDetails',
           element: <SurveyUsers></SurveyUsers>,
-          loader: () => fetch('http://localhost:5000/surveyData')
+          loader: () => fetch('https://server-site-project.vercel.app/surveyData')
         },
       ]
     }

@@ -8,7 +8,7 @@ const useSurveyData = () => {
     const {data,isLoading,isFetching,refetch} = useQuery({
         queryKey: [user], //?.email
         queryFn: async () => {
-            const surveyDataFetch = await fetch("http://localhost:5000/surveyData"); //surveyEmail/?email=${user?.email}
+            const surveyDataFetch = await fetch("https://server-site-project.vercel.app/surveyData"); //surveyEmail/?email=${user?.email}
             const surveyData= await surveyDataFetch.json();
             return surveyData;
         }
