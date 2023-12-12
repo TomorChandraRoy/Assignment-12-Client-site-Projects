@@ -15,13 +15,15 @@ const Home = () => {
                 <div className="hero min-h-[500px]" style={{ backgroundImage: 'url(https://i.ibb.co/1GpKc2x/34682605-8136206.jpg)' }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-center text-neutral-content">
-                        <div className="max-w-md">
+                        <div data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000" className="max-w-md">
                             <h1 className="mb-5 text-5xl font-bold">Survey</h1>
                             <p className="mb-5 text-2xl">A survey is a method of gathering information using relevant questions from a sample of people with the aim of understanding populations as a whole.</p>
                             <Button variant="contained" href="#contained-buttons">
-                            Explore
+                                Explore
                             </Button>
-                
+
                         </div>
                     </div>
                 </div>
@@ -55,7 +57,7 @@ const Home = () => {
                 </div>
                 <div className=" mx-auto text-center font-extrabold text-2xl"> {moment().format('MMMM Do YYYY, h:mm:ss a')}
                 </div>
-                 <Blog></Blog>
+                <Blog></Blog>
                 <div className="my-6">
                     <Faq></Faq>
                 </div>
