@@ -5,6 +5,7 @@ import Faq from "./FAQSection/FAQSection";
 import moment from 'moment';
 import { Button } from "@mui/material";
 import Blog from "../BlogPage/Blog";
+import SliderPage from './../Slider/SliderPage';
 const Home = () => {
     return (
         <div>
@@ -31,6 +32,7 @@ const Home = () => {
                 <div className="my-5">
                     <FeaturedSurvey></FeaturedSurvey>
                 </div>
+                <SliderPage></SliderPage>
                 <div className="my-5">
                     <LatestSurveys></LatestSurveys>
                 </div>
